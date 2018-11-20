@@ -9,10 +9,18 @@ class UI {
         this.printCategories();
     }
     printCategories() {
-        const categoeiesList = eventbrite.getCategoriesAPI()
+        const categoriesList = eventbrite.getCategoriesAPI()
         .then(categories => {
-            console.log(categories);
-            
-        });
+            const categoriesList = categories.categories.categories;
+            const categoriesSelect = document.querySelector("#category");
+
+            categoriesList.forEach(category => {
+                const option = document.createElement("option");
+                option.value = category.id;
+                option.appendChild(document.createTextNode(category.name));
+                categoriesSelect.appendChild(option);
+            });
+        })
+        .catch(error => console.log(error));
     }
 }
