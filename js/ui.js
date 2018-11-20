@@ -23,4 +23,26 @@ class UI {
         })
         .catch(error => console.log(error));
     }
+
+    printMessage(message, className) {
+        // create a div
+        const div = document.createElement("div");
+        div.className = className;
+        // add the text
+        div.appendChild(document.createTextNode(message));
+        // Insert into the HTML
+        const searchDiv = document.querySelector("#search-events");
+        searchDiv.appendChild(div);
+        // remove the alert after 3 seconds
+        setTimeout(() => {
+            this.removeMessage();
+        }, 3000);
+    }
+    // Remove the message
+    removeMessage() {
+        const alert = document.querySelector(".alert");
+            if(alert) {
+                alert.remove();
+            }
+    }
 }
