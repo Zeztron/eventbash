@@ -11,6 +11,8 @@ class EventBrite {
 
         // wait for response and return as json
         const events = await eventsResponse.json();
+        console.log(events);
+        
         return {
             events
         }

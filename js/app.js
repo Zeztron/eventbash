@@ -19,6 +19,8 @@ document.getElementById("submitBtn").addEventListener("click", (e) => {
             const eventsList = events.events.events;
             if (eventsList.length > 0) {
                 // print events
+                ui.displayEvents(eventsList);
+                document.getElementById("event-name").value = "";
             } else {
                 ui.printMessage("No Results Found.", "text-center alert alert-danger mt-4");
                 document.getElementById("event-name").value = "";
