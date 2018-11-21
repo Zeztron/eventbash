@@ -1,4 +1,4 @@
-# events
+# eventbash
 Website that uses Eventbrite API to fetch upcoming events in the area.
 
 ## Demo here:
