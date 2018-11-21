@@ -5,5 +5,6 @@ Website that uses Eventbrite API to fetch upcoming events in the area.
 > https://zeztron.github.io/eventbash/
 
 
-<img width="1676" alt="screen shot 2018-11-20 at 8 14 25 pm" src="https://user-images.githubusercontent.com/41349472/48812596-15207900-ed01-11e8-841d-9403f6fee8f0.png">
+<img width="1154" alt="screen shot 2018-11-20 at 8 57 41 pm" src="https://user-images.githubusercontent.com/41349472/48813952-ff15b700-ed06-11e8-80ac-a8c32df6cb84.png">
+
 
