@@ -22,13 +22,13 @@ class UI {
                         <div class="card-body">
                             <img class="img-fluid mg-2" src="${eventInfo.logo !== null ? eventInfo.logo.url: ""}">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body text-dark">
                             <div class="card-text">
                                 <h2 class="text-center card-title">${eventInfo.name.text}</h2>
                                 <p class="lead text-info">Event Information:</p>
                                 <p>${eventInfo.description.text.substring(0,200)}...</p>
-                                <span class="badge badge-secondary">Date & Time: ${eventInfo.start.local}</span>
-                                <a href="${eventInfo.url}" target="_blank" class="btn btn-info btn-block mb-4">Get Tickets</a>
+                                <span class="badge badge-info mb-4">Date & Time: ${eventInfo.start.local}</span>
+                                <a href="${eventInfo.url}" target="_blank" class="btn btn-outline-info btn-block mb-4">Get Tickets</a>
                             </div>
                         </div>
                     </div>
